@@ -94,8 +94,18 @@ const Navbar = ({ className = "" }: NavbarProps) => {
             <DropdownMenuContent align="end">
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Profile</DropdownMenuItem>
-              <DropdownMenuItem>My Contributions</DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => (window.location.href = "/profile")}
+              >
+                Profile
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() =>
+                  (window.location.href = "/profile?tab=contributions")
+                }
+              >
+                My Contributions
+              </DropdownMenuItem>
               <DropdownMenuItem>Settings</DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>Logout</DropdownMenuItem>

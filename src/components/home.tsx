@@ -92,8 +92,12 @@ const Home = () => {
                 )}
               </Button>
               <div className="hidden md:block">
-                <Button variant="outline" size="sm">
-                  Sign In
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => (window.location.href = "/profile")}
+                >
+                  View Profile
                 </Button>
               </div>
               <Sheet>
@@ -122,8 +126,13 @@ const Home = () => {
                     >
                       Submissions
                     </a>
-                    <Button variant="outline" size="sm" className="w-full">
-                      Sign In
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="w-full"
+                      onClick={() => (window.location.href = "/profile")}
+                    >
+                      View Profile
                     </Button>
                   </nav>
                 </SheetContent>
